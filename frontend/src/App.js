@@ -1,0 +1,9 @@
+const App = () => {
+  return (
+    <>
+      <h1>Welcome to QuickShop</h1>
+    </>
+  );
+};
+
+export default App;
