@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { BrowserRouter as Router, Route } from "react-router-dom";
 
 import { Container } from "react-bootstrap";
 import Header from "./components/Header";
@@ -12,8 +12,8 @@ const App = () => {
       <Header />
       <main className="py-3">
         <Container>
-          <Route path="/" exact component={HomeScreen} />
-          <Route path="/product/:id" exact component={ProductScreen} />
+          <Route path="/" component={HomeScreen} exact />
+          <Route path="/product/:id" component={ProductScreen} exact />
         </Container>
       </main>
       <Footer />
